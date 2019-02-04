@@ -1,0 +1,11 @@
+C:\Users\hgandhi\source\repos\Conceptial\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\hgandhi\source\repos\Conceptial\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\hgandhi\source\repos\Conceptial\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\hgandhi\source\repos\Conceptial\DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\hgandhi\source\repos\Conceptial\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hgandhi\source\repos\Conceptial\DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\hgandhi\source\repos\Conceptial\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hgandhi\source\repos\Conceptial\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\hgandhi\source\repos\Conceptial\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\hgandhi\source\repos\Conceptial\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\hgandhi\source\repos\Conceptial\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache

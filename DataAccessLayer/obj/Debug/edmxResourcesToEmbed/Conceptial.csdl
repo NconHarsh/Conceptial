@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ConceptialModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Additional_Weight_Table">
+    <Key>
+      <PropertyRef Name="Additional_Weight_ID" />
+    </Key>
+    <Property Name="Additional_Weight_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ship_ID" Type="Int64" />
+    <Property Name="Weight_Description" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="No_of_Crew" Type="Int32" />
+    <Property Name="Total_Weight" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Centroid_X" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Centroid_Y" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Centroid_Z" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Moment_Weight_X" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Moment_Weight_Y" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Moment_Weight_Z" Type="Decimal" Precision="18" Scale="4" />
+    <NavigationProperty Name="Ship_Table" Relationship="Self.FK_Additional_Weight_Table_Ship_Table" FromRole="Additional_Weight_Table" ToRole="Ship_Table" />
+  </EntityType>
+  <EntityType Name="Ammunition_Components_Table">
+    <Key>
+      <PropertyRef Name="Ammunition_Components_ID" />
+    </Key>
+    <Property Name="Ammunition_Components_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ship_ID" Type="Int64" />
+    <Property Name="Weight_Description" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Total_Weight" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Weight_Perc" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Weight" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Centroid_X" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Centroid_Y" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Centroid_Z" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Moment_Weight_X" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Moment_Weight_Y" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Moment_Weight_Z" Type="Decimal" Precision="18" Scale="4" />
+    <NavigationProperty Name="Ship_Table" Relationship="Self.FK_Ammunition_Components_Table_Ship_Table" FromRole="Ammunition_Components_Table" ToRole="Ship_Table" />
+  </EntityType>
+  <EntityType Name="Crew_And_Effects_Components_Table">
+    <Key>
+      <PropertyRef Name="Crew_And_Effects_Components_ID" />
+    </Key>
+    <Property Name="Crew_And_Effects_Components_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ship_ID" Type="Int64" />
+    <Property Name="Weight_Description" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="No_of_Crew" Type="Int32" />
+    <Property Name="Total_Weight" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Centroid_X" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Centroid_Y" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Centroid_Z" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Moment_Weight_X" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Moment_Weight_Y" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Moment_Weight_Z" Type="Decimal" Precision="18" Scale="4" />
+    <NavigationProperty Name="Ship_Table" Relationship="Self.FK_Crew_And_Effects_Components_Table_Ship_Table" FromRole="Crew_And_Effects_Components_Table" ToRole="Ship_Table" />
+  </EntityType>
+  <EntityType Name="Hydrostatic_Particulars_Table">
+    <Key>
+      <PropertyRef Name="Hydrostatic_Particulars_ID" />
+    </Key>
+    <Property Name="Hydrostatic_Particulars_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ship_ID" Type="Int64" Nullable="false" />
+    <Property Name="Mean_Draught_BP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Trim_BP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Displacement_Volume" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Displacement" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="LCB" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="TCB" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="VCB" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="LCB_Proportion_of_LBP_Perc" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="LCF" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="TCF" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="VCF" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="TPI" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Ixx" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Iyy" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Ixy" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Principal_Axes_Angle" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="BMt" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="BMl" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="KMt" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="KMl" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="MCT_BP_CoB" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Section_Area_Amidships" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Section_Area_Maximum" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="X_Section_Area_Maximum" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Waterplane_Area" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Wetted_Surface_Area" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="CB" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="CM" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="CP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="CVP" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="CWL" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Length_To_Displacement_Ratio" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Length_To_Breadth_Ratio" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Breadth_To_Draught_Ratio" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Emerged_Buoyancy" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Emerged_Buoyancy_Centroid_X" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Emerged_Buoyancy_Centroid_Y" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Emerged_Buoyancy_Centroid_Z" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Reserve_Of_Buoyancy" Type="Decimal" Precision="18" Scale="4" />
+    <NavigationProperty Name="Ship_Table" Relationship="Self.FK_Hydrostatic_Particulars_Table_Ship_Table" FromRole="Hydrostatic_Particulars_Table" ToRole="Ship_Table" />
+  </EntityType>
+  <EntityType Name="Light_Ship_Weight_Table">
+    <Key>
+      <PropertyRef Name="Light_Ship_Weight_ID" />
+    </Key>
+    <Property Name="Light_Ship_Weight_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ship_ID" Type="Int64" />
+    <Property Name="Weight_Description" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Weight" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Centroid_X" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Centroid_Y" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Centroid_Z" Type="Decimal" Precision="18" Scale="4" />
+    <NavigationProperty Name="Ship_Table" Relationship="Self.FK_Light_Ship_Weight_Table_Ship_Table" FromRole="Light_Ship_Weight_Table" ToRole="Ship_Table" />
+  </EntityType>
+  <EntityType Name="Provision_Store_Components_Table">
+    <Key>
+      <PropertyRef Name="Provision_Store_Components_ID" />
+    </Key>
+    <Property Name="Provision_Store_Components_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ship_ID" Type="Int64" />
+    <Property Name="Weight_Description" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Total_Weight" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Weight_Perc" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Weight" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Centroid_X" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Centroid_Y" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Centroid_Z" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Moment_Weight_X" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Moment_Weight_Y" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Moment_Weight_Z" Type="Decimal" Precision="18" Scale="4" />
+    <NavigationProperty Name="Ship_Table" Relationship="Self.FK_Provision_Store_Components_Table_Ship_Table" FromRole="Provision_Store_Components_Table" ToRole="Ship_Table" />
+  </EntityType>
+  <EntityType Name="Role_Tbl">
+    <Key>
+      <PropertyRef Name="Role_ID" />
+    </Key>
+    <Property Name="Role_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Role_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ship_Table">
+    <Key>
+      <PropertyRef Name="Ship_ID" />
+    </Key>
+    <Property Name="Ship_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ship_Name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Ship_Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Length_Overall" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Length_of_Waterline" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Breadth_Overall" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Design_Draft" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Depth" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Block_Coefficient" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Displacement" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Standard_Loading_Condition_ID" Type="Byte" />
+    <Property Name="Is_Active" Type="Boolean" />
+    <Property Name="Created_By" Type="Int32" />
+    <Property Name="Creation_Date" Type="DateTime" Precision="3" />
+    <Property Name="Modified_By" Type="Int32" />
+    <Property Name="Modification_Date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Additional_Weight_Table" Relationship="Self.FK_Additional_Weight_Table_Ship_Table" FromRole="Ship_Table" ToRole="Additional_Weight_Table" />
+    <NavigationProperty Name="Ammunition_Components_Table" Relationship="Self.FK_Ammunition_Components_Table_Ship_Table" FromRole="Ship_Table" ToRole="Ammunition_Components_Table" />
+    <NavigationProperty Name="Crew_And_Effects_Components_Table" Relationship="Self.FK_Crew_And_Effects_Components_Table_Ship_Table" FromRole="Ship_Table" ToRole="Crew_And_Effects_Components_Table" />
+    <NavigationProperty Name="Hydrostatic_Particulars_Table" Relationship="Self.FK_Hydrostatic_Particulars_Table_Ship_Table" FromRole="Ship_Table" ToRole="Hydrostatic_Particulars_Table" />
+    <NavigationProperty Name="Light_Ship_Weight_Table" Relationship="Self.FK_Light_Ship_Weight_Table_Ship_Table" FromRole="Ship_Table" ToRole="Light_Ship_Weight_Table" />
+    <NavigationProperty Name="Provision_Store_Components_Table" Relationship="Self.FK_Provision_Store_Components_Table_Ship_Table" FromRole="Ship_Table" ToRole="Provision_Store_Components_Table" />
+  </EntityType>
+  <EntityType Name="Tank_Sounding_Table">
+    <Key>
+      <PropertyRef Name="Tank_Sounding_Id" />
+    </Key>
+    <Property Name="Tank_Sounding_Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tank_Id" Type="Int64" Nullable="false" />
+    <Property Name="Sounding_mm" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Volume_Precentage" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Volume_of_fluid_m" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Weight_of_fluid_te" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="LCG_of_fluid_mm" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="TCG_of_fluid_mm" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="VCG_of_fluid_mm" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Virtual_VCGt_mm" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Transverse_FSM_te_m" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Longitudinal_FSM_te_m" Type="Decimal" Precision="18" Scale="4" />
+    <NavigationProperty Name="Tank_Status" Relationship="Self.FK_Tank_Sounding_Table_Tank_Status" FromRole="Tank_Sounding_Table" ToRole="Tank_Status" />
+  </EntityType>
+  <EntityType Name="Tank_Status">
+    <Key>
+      <PropertyRef Name="Tank_Id" />
+    </Key>
+    <Property Name="Tank_Id" Type="Int64" Nullable="false" />
+    <Property Name="Ship_ID" Type="Int64" />
+    <Property Name="Tank_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Fluid_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Fluid_Density__te_m3_" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Fullness_definition" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Sounding__mm_" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Weight___te_" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="LCG__mm_" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="TCG___mm_" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="VCG_Fluid__mm_" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="VCGT_Virtual__mm_" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Transverse_FSM___te_m_" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Longitudinal_FSM___te_m_" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Weight_X_LCG" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Weight_X_TCG" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="Weight_X_VCG" Type="Decimal" Precision="18" Scale="4" />
+    <NavigationProperty Name="Tank_Sounding_Table" Relationship="Self.FK_Tank_Sounding_Table_Tank_Status" FromRole="Tank_Status" ToRole="Tank_Sounding_Table" />
+  </EntityType>
+  <EntityType Name="User_Role_Tbl">
+    <Key>
+      <PropertyRef Name="Role_ID" />
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="Role_ID" Type="Int32" Nullable="false" />
+    <Property Name="User_ID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User_Tbl">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="User_ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="User_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Is_Active" Type="Boolean" Nullable="false" />
+    <Property Name="Added_On" Type="DateTime" Precision="3" />
+    <Property Name="First_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Last_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Mobile" Type="Decimal" Precision="12" Scale="0" />
+    <Property Name="EmailID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_Additional_Weight_Table_Ship_Table">
+    <End Role="Ship_Table" Type="Self.Ship_Table" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Additional_Weight_Table" Type="Self.Additional_Weight_Table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ship_Table">
+        <PropertyRef Name="Ship_ID" />
+      </Principal>
+      <Dependent Role="Additional_Weight_Table">
+        <PropertyRef Name="Ship_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ammunition_Components_Table_Ship_Table">
+    <End Role="Ship_Table" Type="Self.Ship_Table" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Ammunition_Components_Table" Type="Self.Ammunition_Components_Table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ship_Table">
+        <PropertyRef Name="Ship_ID" />
+      </Principal>
+      <Dependent Role="Ammunition_Components_Table">
+        <PropertyRef Name="Ship_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Crew_And_Effects_Components_Table_Ship_Table">
+    <End Role="Ship_Table" Type="Self.Ship_Table" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Crew_And_Effects_Components_Table" Type="Self.Crew_And_Effects_Components_Table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ship_Table">
+        <PropertyRef Name="Ship_ID" />
+      </Principal>
+      <Dependent Role="Crew_And_Effects_Components_Table">
+        <PropertyRef Name="Ship_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Hydrostatic_Particulars_Table_Ship_Table">
+    <End Role="Ship_Table" Type="Self.Ship_Table" Multiplicity="1" />
+    <End Role="Hydrostatic_Particulars_Table" Type="Self.Hydrostatic_Particulars_Table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ship_Table">
+        <PropertyRef Name="Ship_ID" />
+      </Principal>
+      <Dependent Role="Hydrostatic_Particulars_Table">
+        <PropertyRef Name="Ship_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Light_Ship_Weight_Table_Ship_Table">
+    <End Role="Ship_Table" Type="Self.Ship_Table" Multiplicity="0..1" />
+    <End Role="Light_Ship_Weight_Table" Type="Self.Light_Ship_Weight_Table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ship_Table">
+        <PropertyRef Name="Ship_ID" />
+      </Principal>
+      <Dependent Role="Light_Ship_Weight_Table">
+        <PropertyRef Name="Ship_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Provision_Store_Components_Table_Ship_Table">
+    <End Role="Ship_Table" Type="Self.Ship_Table" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Provision_Store_Components_Table" Type="Self.Provision_Store_Components_Table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ship_Table">
+        <PropertyRef Name="Ship_ID" />
+      </Principal>
+      <Dependent Role="Provision_Store_Components_Table">
+        <PropertyRef Name="Ship_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tank_Sounding_Table_Tank_Status">
+    <End Role="Tank_Status" Type="Self.Tank_Status" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Tank_Sounding_Table" Type="Self.Tank_Sounding_Table" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tank_Status">
+        <PropertyRef Name="Tank_Id" />
+      </Principal>
+      <Dependent Role="Tank_Sounding_Table">
+        <PropertyRef Name="Tank_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ConceptialEntities" annotation:LazyLoadingEnabled="false">
+    <EntitySet Name="Additional_Weight_Table" EntityType="Self.Additional_Weight_Table" />
+    <EntitySet Name="Ammunition_Components_Table" EntityType="Self.Ammunition_Components_Table" />
+    <EntitySet Name="Crew_And_Effects_Components_Table" EntityType="Self.Crew_And_Effects_Components_Table" />
+    <EntitySet Name="Hydrostatic_Particulars_Table" EntityType="Self.Hydrostatic_Particulars_Table" />
+    <EntitySet Name="Light_Ship_Weight_Table" EntityType="Self.Light_Ship_Weight_Table" />
+    <EntitySet Name="Provision_Store_Components_Table" EntityType="Self.Provision_Store_Components_Table" />
+    <EntitySet Name="Role_Tbl" EntityType="Self.Role_Tbl" />
+    <EntitySet Name="Ship_Table" EntityType="Self.Ship_Table" />
+    <EntitySet Name="Tank_Sounding_Table" EntityType="Self.Tank_Sounding_Table" />
+    <EntitySet Name="Tank_Status" EntityType="Self.Tank_Status" />
+    <EntitySet Name="User_Role_Tbl" EntityType="Self.User_Role_Tbl" />
+    <EntitySet Name="User_Tbl" EntityType="Self.User_Tbl" />
+    <AssociationSet Name="FK_Additional_Weight_Table_Ship_Table" Association="Self.FK_Additional_Weight_Table_Ship_Table">
+      <End Role="Ship_Table" EntitySet="Ship_Table" />
+      <End Role="Additional_Weight_Table" EntitySet="Additional_Weight_Table" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ammunition_Components_Table_Ship_Table" Association="Self.FK_Ammunition_Components_Table_Ship_Table">
+      <End Role="Ship_Table" EntitySet="Ship_Table" />
+      <End Role="Ammunition_Components_Table" EntitySet="Ammunition_Components_Table" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Crew_And_Effects_Components_Table_Ship_Table" Association="Self.FK_Crew_And_Effects_Components_Table_Ship_Table">
+      <End Role="Ship_Table" EntitySet="Ship_Table" />
+      <End Role="Crew_And_Effects_Components_Table" EntitySet="Crew_And_Effects_Components_Table" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Hydrostatic_Particulars_Table_Ship_Table" Association="Self.FK_Hydrostatic_Particulars_Table_Ship_Table">
+      <End Role="Ship_Table" EntitySet="Ship_Table" />
+      <End Role="Hydrostatic_Particulars_Table" EntitySet="Hydrostatic_Particulars_Table" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Light_Ship_Weight_Table_Ship_Table" Association="Self.FK_Light_Ship_Weight_Table_Ship_Table">
+      <End Role="Ship_Table" EntitySet="Ship_Table" />
+      <End Role="Light_Ship_Weight_Table" EntitySet="Light_Ship_Weight_Table" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Provision_Store_Components_Table_Ship_Table" Association="Self.FK_Provision_Store_Components_Table_Ship_Table">
+      <End Role="Ship_Table" EntitySet="Ship_Table" />
+      <End Role="Provision_Store_Components_Table" EntitySet="Provision_Store_Components_Table" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tank_Sounding_Table_Tank_Status" Association="Self.FK_Tank_Sounding_Table_Tank_Status">
+      <End Role="Tank_Status" EntitySet="Tank_Status" />
+      <End Role="Tank_Sounding_Table" EntitySet="Tank_Sounding_Table" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

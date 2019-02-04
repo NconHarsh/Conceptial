@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f2bb39403d65489594e9079f306ac210" Name="Diagram1">
+        <EntityTypeShape EntityType="ConceptialModel.Additional_Weight_Table" Width="1.5" PointX="3" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConceptialModel.Ammunition_Components_Table" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConceptialModel.Crew_And_Effects_Components_Table" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConceptialModel.Hydrostatic_Particulars_Table" Width="1.5" PointX="3" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConceptialModel.Light_Ship_Weight_Table" Width="1.5" PointX="3" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConceptialModel.Provision_Store_Components_Table" Width="1.5" PointX="3" PointY="27.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConceptialModel.Role_Tbl" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConceptialModel.Ship_Table" Width="1.5" PointX="0.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConceptialModel.Tank_Sounding_Table" Width="1.5" PointX="8" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConceptialModel.Tank_Status" Width="1.5" PointX="5.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConceptialModel.User_Role_Tbl" Width="1.5" PointX="7.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConceptialModel.User_Tbl" Width="1.5" PointX="5.75" PointY="9.75" IsExpanded="true" />
+        <AssociationConnector Association="ConceptialModel.FK_Additional_Weight_Table_Ship_Table" ManuallyRouted="false" />
+        <AssociationConnector Association="ConceptialModel.FK_Ammunition_Components_Table_Ship_Table" ManuallyRouted="false" />
+        <AssociationConnector Association="ConceptialModel.FK_Crew_And_Effects_Components_Table_Ship_Table" ManuallyRouted="false" />
+        <AssociationConnector Association="ConceptialModel.FK_Hydrostatic_Particulars_Table_Ship_Table" ManuallyRouted="false" />
+        <AssociationConnector Association="ConceptialModel.FK_Light_Ship_Weight_Table_Ship_Table" ManuallyRouted="false" />
+        <AssociationConnector Association="ConceptialModel.FK_Provision_Store_Components_Table_Ship_Table" ManuallyRouted="false" />
+        <AssociationConnector Association="ConceptialModel.FK_Tank_Sounding_Table_Tank_Status" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

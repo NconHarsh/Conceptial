@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ConceptialModelStoreContainer" CdmEntityContainer="ConceptialEntities">
+    <EntitySetMapping Name="Additional_Weight_Table">
+      <EntityTypeMapping TypeName="ConceptialModel.Additional_Weight_Table">
+        <MappingFragment StoreEntitySet="Additional_Weight_Table">
+          <ScalarProperty Name="Additional_Weight_ID" ColumnName="Additional_Weight_ID" />
+          <ScalarProperty Name="Ship_ID" ColumnName="Ship_ID" />
+          <ScalarProperty Name="Weight_Description" ColumnName="Weight_Description" />
+          <ScalarProperty Name="No_of_Crew" ColumnName="No_of_Crew" />
+          <ScalarProperty Name="Total_Weight" ColumnName="Total_Weight" />
+          <ScalarProperty Name="Centroid_X" ColumnName="Centroid_X" />
+          <ScalarProperty Name="Centroid_Y" ColumnName="Centroid_Y" />
+          <ScalarProperty Name="Centroid_Z" ColumnName="Centroid_Z" />
+          <ScalarProperty Name="Moment_Weight_X" ColumnName="Moment_Weight_X" />
+          <ScalarProperty Name="Moment_Weight_Y" ColumnName="Moment_Weight_Y" />
+          <ScalarProperty Name="Moment_Weight_Z" ColumnName="Moment_Weight_Z" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ammunition_Components_Table">
+      <EntityTypeMapping TypeName="ConceptialModel.Ammunition_Components_Table">
+        <MappingFragment StoreEntitySet="Ammunition_Components_Table">
+          <ScalarProperty Name="Ammunition_Components_ID" ColumnName="Ammunition_Components_ID" />
+          <ScalarProperty Name="Ship_ID" ColumnName="Ship_ID" />
+          <ScalarProperty Name="Weight_Description" ColumnName="Weight_Description" />
+          <ScalarProperty Name="Total_Weight" ColumnName="Total_Weight" />
+          <ScalarProperty Name="Weight_Perc" ColumnName="Weight_Perc" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Centroid_X" ColumnName="Centroid_X" />
+          <ScalarProperty Name="Centroid_Y" ColumnName="Centroid_Y" />
+          <ScalarProperty Name="Centroid_Z" ColumnName="Centroid_Z" />
+          <ScalarProperty Name="Moment_Weight_X" ColumnName="Moment_Weight_X" />
+          <ScalarProperty Name="Moment_Weight_Y" ColumnName="Moment_Weight_Y" />
+          <ScalarProperty Name="Moment_Weight_Z" ColumnName="Moment_Weight_Z" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Crew_And_Effects_Components_Table">
+      <EntityTypeMapping TypeName="ConceptialModel.Crew_And_Effects_Components_Table">
+        <MappingFragment StoreEntitySet="Crew_And_Effects_Components_Table">
+          <ScalarProperty Name="Crew_And_Effects_Components_ID" ColumnName="Crew_And_Effects_Components_ID" />
+          <ScalarProperty Name="Ship_ID" ColumnName="Ship_ID" />
+          <ScalarProperty Name="Weight_Description" ColumnName="Weight_Description" />
+          <ScalarProperty Name="No_of_Crew" ColumnName="No_of_Crew" />
+          <ScalarProperty Name="Total_Weight" ColumnName="Total_Weight" />
+          <ScalarProperty Name="Centroid_X" ColumnName="Centroid_X" />
+          <ScalarProperty Name="Centroid_Y" ColumnName="Centroid_Y" />
+          <ScalarProperty Name="Centroid_Z" ColumnName="Centroid_Z" />
+          <ScalarProperty Name="Moment_Weight_X" ColumnName="Moment_Weight_X" />
+          <ScalarProperty Name="Moment_Weight_Y" ColumnName="Moment_Weight_Y" />
+          <ScalarProperty Name="Moment_Weight_Z" ColumnName="Moment_Weight_Z" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hydrostatic_Particulars_Table">
+      <EntityTypeMapping TypeName="ConceptialModel.Hydrostatic_Particulars_Table">
+        <MappingFragment StoreEntitySet="Hydrostatic_Particulars_Table">
+          <ScalarProperty Name="Hydrostatic_Particulars_ID" ColumnName="Hydrostatic_Particulars_ID" />
+          <ScalarProperty Name="Ship_ID" ColumnName="Ship_ID" />
+          <ScalarProperty Name="Mean_Draught_BP" ColumnName="Mean_Draught_BP" />
+          <ScalarProperty Name="Trim_BP" ColumnName="Trim_BP" />
+          <ScalarProperty Name="Displacement_Volume" ColumnName="Displacement_Volume" />
+          <ScalarProperty Name="Displacement" ColumnName="Displacement" />
+          <ScalarProperty Name="LCB" ColumnName="LCB" />
+          <ScalarProperty Name="TCB" ColumnName="TCB" />
+          <ScalarProperty Name="VCB" ColumnName="VCB" />
+          <ScalarProperty Name="LCB_Proportion_of_LBP_Perc" ColumnName="LCB_Proportion_of_LBP_Perc" />
+          <ScalarProperty Name="LCF" ColumnName="LCF" />
+          <ScalarProperty Name="TCF" ColumnName="TCF" />
+          <ScalarProperty Name="VCF" ColumnName="VCF" />
+          <ScalarProperty Name="TPI" ColumnName="TPI" />
+          <ScalarProperty Name="Ixx" ColumnName="Ixx" />
+          <ScalarProperty Name="Iyy" ColumnName="Iyy" />
+          <ScalarProperty Name="Ixy" ColumnName="Ixy" />
+          <ScalarProperty Name="Principal_Axes_Angle" ColumnName="Principal_Axes_Angle" />
+          <ScalarProperty Name="BMt" ColumnName="BMt" />
+          <ScalarProperty Name="BMl" ColumnName="BMl" />
+          <ScalarProperty Name="KMt" ColumnName="KMt" />
+          <ScalarProperty Name="KMl" ColumnName="KMl" />
+          <ScalarProperty Name="MCT_BP_CoB" ColumnName="MCT_BP_CoB" />
+          <ScalarProperty Name="Section_Area_Amidships" ColumnName="Section_Area_Amidships" />
+          <ScalarProperty Name="Section_Area_Maximum" ColumnName="Section_Area_Maximum" />
+          <ScalarProperty Name="X_Section_Area_Maximum" ColumnName="X_Section_Area_Maximum" />
+          <ScalarProperty Name="Waterplane_Area" ColumnName="Waterplane_Area" />
+          <ScalarProperty Name="Wetted_Surface_Area" ColumnName="Wetted_Surface_Area" />
+          <ScalarProperty Name="CB" ColumnName="CB" />
+          <ScalarProperty Name="CM" ColumnName="CM" />
+          <ScalarProperty Name="CP" ColumnName="CP" />
+          <ScalarProperty Name="CVP" ColumnName="CVP" />
+          <ScalarProperty Name="CWL" ColumnName="CWL" />
+          <ScalarProperty Name="Length_To_Displacement_Ratio" ColumnName="Length_To_Displacement_Ratio" />
+          <ScalarProperty Name="Length_To_Breadth_Ratio" ColumnName="Length_To_Breadth_Ratio" />
+          <ScalarProperty Name="Breadth_To_Draught_Ratio" ColumnName="Breadth_To_Draught_Ratio" />
+          <ScalarProperty Name="Emerged_Buoyancy" ColumnName="Emerged_Buoyancy" />
+          <ScalarProperty Name="Emerged_Buoyancy_Centroid_X" ColumnName="Emerged_Buoyancy_Centroid_X" />
+          <ScalarProperty Name="Emerged_Buoyancy_Centroid_Y" ColumnName="Emerged_Buoyancy_Centroid_Y" />
+          <ScalarProperty Name="Emerged_Buoyancy_Centroid_Z" ColumnName="Emerged_Buoyancy_Centroid_Z" />
+          <ScalarProperty Name="Reserve_Of_Buoyancy" ColumnName="Reserve_Of_Buoyancy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Light_Ship_Weight_Table">
+      <EntityTypeMapping TypeName="ConceptialModel.Light_Ship_Weight_Table">
+        <MappingFragment StoreEntitySet="Light_Ship_Weight_Table">
+          <ScalarProperty Name="Light_Ship_Weight_ID" ColumnName="Light_Ship_Weight_ID" />
+          <ScalarProperty Name="Ship_ID" ColumnName="Ship_ID" />
+          <ScalarProperty Name="Weight_Description" ColumnName="Weight_Description" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Centroid_X" ColumnName="Centroid_X" />
+          <ScalarProperty Name="Centroid_Y" ColumnName="Centroid_Y" />
+          <ScalarProperty Name="Centroid_Z" ColumnName="Centroid_Z" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Provision_Store_Components_Table">
+      <EntityTypeMapping TypeName="ConceptialModel.Provision_Store_Components_Table">
+        <MappingFragment StoreEntitySet="Provision_Store_Components_Table">
+          <ScalarProperty Name="Provision_Store_Components_ID" ColumnName="Provision_Store_Components_ID" />
+          <ScalarProperty Name="Ship_ID" ColumnName="Ship_ID" />
+          <ScalarProperty Name="Weight_Description" ColumnName="Weight_Description" />
+          <ScalarProperty Name="Total_Weight" ColumnName="Total_Weight" />
+          <ScalarProperty Name="Weight_Perc" ColumnName="Weight_Perc" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Centroid_X" ColumnName="Centroid_X" />
+          <ScalarProperty Name="Centroid_Y" ColumnName="Centroid_Y" />
+          <ScalarProperty Name="Centroid_Z" ColumnName="Centroid_Z" />
+          <ScalarProperty Name="Moment_Weight_X" ColumnName="Moment_Weight_X" />
+          <ScalarProperty Name="Moment_Weight_Y" ColumnName="Moment_Weight_Y" />
+          <ScalarProperty Name="Moment_Weight_Z" ColumnName="Moment_Weight_Z" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role_Tbl">
+      <EntityTypeMapping TypeName="ConceptialModel.Role_Tbl">
+        <MappingFragment StoreEntitySet="Role_Tbl">
+          <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+          <ScalarProperty Name="Role_Name" ColumnName="Role_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ship_Table">
+      <EntityTypeMapping TypeName="ConceptialModel.Ship_Table">
+        <MappingFragment StoreEntitySet="Ship_Table">
+          <ScalarProperty Name="Ship_ID" ColumnName="Ship_ID" />
+          <ScalarProperty Name="Ship_Name" ColumnName="Ship_Name" />
+          <ScalarProperty Name="Ship_Description" ColumnName="Ship_Description" />
+          <ScalarProperty Name="Length_Overall" ColumnName="Length_Overall" />
+          <ScalarProperty Name="Length_of_Waterline" ColumnName="Length_of_Waterline" />
+          <ScalarProperty Name="Breadth_Overall" ColumnName="Breadth_Overall" />
+          <ScalarProperty Name="Design_Draft" ColumnName="Design_Draft" />
+          <ScalarProperty Name="Depth" ColumnName="Depth" />
+          <ScalarProperty Name="Block_Coefficient" ColumnName="Block_Coefficient" />
+          <ScalarProperty Name="Displacement" ColumnName="Displacement" />
+          <ScalarProperty Name="Standard_Loading_Condition_ID" ColumnName="Standard_Loading_Condition_ID" />
+          <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+          <ScalarProperty Name="Created_By" ColumnName="Created_By" />
+          <ScalarProperty Name="Creation_Date" ColumnName="Creation_Date" />
+          <ScalarProperty Name="Modified_By" ColumnName="Modified_By" />
+          <ScalarProperty Name="Modification_Date" ColumnName="Modification_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tank_Sounding_Table">
+      <EntityTypeMapping TypeName="ConceptialModel.Tank_Sounding_Table">
+        <MappingFragment StoreEntitySet="Tank_Sounding_Table">
+          <ScalarProperty Name="Tank_Sounding_Id" ColumnName="Tank_Sounding_Id" />
+          <ScalarProperty Name="Tank_Id" ColumnName="Tank_Id" />
+          <ScalarProperty Name="Sounding_mm" ColumnName="Sounding_mm" />
+          <ScalarProperty Name="Volume_Precentage" ColumnName="Volume_Precentage" />
+          <ScalarProperty Name="Volume_of_fluid_m" ColumnName="Volume_of_fluid_m" />
+          <ScalarProperty Name="Weight_of_fluid_te" ColumnName="Weight_of_fluid_te" />
+          <ScalarProperty Name="LCG_of_fluid_mm" ColumnName="LCG_of_fluid_mm" />
+          <ScalarProperty Name="TCG_of_fluid_mm" ColumnName="TCG_of_fluid_mm" />
+          <ScalarProperty Name="VCG_of_fluid_mm" ColumnName="VCG_of_fluid_mm" />
+          <ScalarProperty Name="Virtual_VCGt_mm" ColumnName="Virtual_VCGt_mm" />
+          <ScalarProperty Name="Transverse_FSM_te_m" ColumnName="Transverse_FSM_te_m" />
+          <ScalarProperty Name="Longitudinal_FSM_te_m" ColumnName="Longitudinal_FSM_te_m" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tank_Status">
+      <EntityTypeMapping TypeName="ConceptialModel.Tank_Status">
+        <MappingFragment StoreEntitySet="Tank_Status">
+          <ScalarProperty Name="Tank_Id" ColumnName="Tank_Id" />
+          <ScalarProperty Name="Ship_ID" ColumnName="Ship_ID" />
+          <ScalarProperty Name="Tank_Name" ColumnName="Tank Name" />
+          <ScalarProperty Name="Fluid_Type" ColumnName="Fluid Type" />
+          <ScalarProperty Name="Fluid_Density__te_m3_" ColumnName="Fluid Density_(te/m3)" />
+          <ScalarProperty Name="Fullness_definition" ColumnName="Fullness_definition" />
+          <ScalarProperty Name="Sounding__mm_" ColumnName="Sounding_(mm)" />
+          <ScalarProperty Name="Weight___te_" ColumnName="Weight _(te)" />
+          <ScalarProperty Name="LCG__mm_" ColumnName="LCG_(mm)" />
+          <ScalarProperty Name="TCG___mm_" ColumnName="TCG _(mm)" />
+          <ScalarProperty Name="VCG_Fluid__mm_" ColumnName="VCG Fluid_(mm)" />
+          <ScalarProperty Name="VCGT_Virtual__mm_" ColumnName="VCGT Virtual (mm)" />
+          <ScalarProperty Name="Transverse_FSM___te_m_" ColumnName="Transverse_FSM _(te_m)" />
+          <ScalarProperty Name="Longitudinal_FSM___te_m_" ColumnName="Longitudinal_FSM _(te_m)" />
+          <ScalarProperty Name="Weight_X_LCG" ColumnName="Weight X LCG" />
+          <ScalarProperty Name="Weight_X_TCG" ColumnName="Weight X TCG" />
+          <ScalarProperty Name="Weight_X_VCG" ColumnName="Weight X VCG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User_Role_Tbl">
+      <EntityTypeMapping TypeName="ConceptialModel.User_Role_Tbl">
+        <MappingFragment StoreEntitySet="User_Role_Tbl">
+          <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User_Tbl">
+      <EntityTypeMapping TypeName="ConceptialModel.User_Tbl">
+        <MappingFragment StoreEntitySet="User_Tbl">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Is_Active" ColumnName="Is_Active" />
+          <ScalarProperty Name="Added_On" ColumnName="Added_On" />
+          <ScalarProperty Name="First_Name" ColumnName="First_Name" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last_Name" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
